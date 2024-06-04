@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3bde3; 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #8a496e; 
+    width: 100%; 
+    padding: 20px;
+    text-align: center;
+    color: rgb(12, 6, 6); 
+    border-radius: 5px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #343a40; 
+    text-align: center;
+    margin: 20px 0;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+button {
+    position: relative;
+    padding: 60px 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    background-size: cover; 
+    background-position: top; 
+    z-index: 1;
+    overflow: hidden;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 5px;
+    z-index: -1; 
+    transition: background 0.3s ease;
+}
+
+button:hover::before {
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+button:hover {
+    opacity: 1; 
+}
+
+
+
+/* style kazdego przycisku */
+.btn-owners {
+    background-image: url('images/owners-btn.jpg');
+}
+
+.btn-pets {
+    background-image: url('images/mainpage.jpg');
+}
+
+.btn-appointments {
+    background-image: url('images/app-btn.jpg');
+}
+
+.btn-vets {
+    background-image: url('images/vets-btn.jpg'); 
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer img {
+    max-width: 80%;
+    height: 400px;
+    border-radius: 20px;
+}
